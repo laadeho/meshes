@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\ofxDatGui.cpp">
+      <Filter>addons\ofxDatGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp">
+      <Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{84977eb1-a89d-4b93-b83b-aa0e395e0f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui">
+      <UniqueIdentifier>{eb55836f-f7c0-4453-a34e-420988ff31f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src">
+      <UniqueIdentifier>{2d40dae5-05d2-44a1-85c5-c605ca124934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\components">
+      <UniqueIdentifier>{333dff2b-0707-4d7b-8649-4724bd893e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\core">
+      <UniqueIdentifier>{1166789f-bd7a-4e4a-94a7-a85c1336a4da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\libs">
+      <UniqueIdentifier>{408424da-e4d1-4855-9637-293cb0654f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\libs\ofxSmartFont">
+      <UniqueIdentifier>{196bc3e9-2339-458d-a997-86b62ac7a036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDatGui\src\themes">
+      <UniqueIdentifier>{0be06b81-8afb-4ad9-9168-1c19e9a9fdd4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\ofxDatGui.h">
+      <Filter>addons\ofxDatGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGui2dPad.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiButton.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiColorPicker.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiControls.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiFRM.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiGroups.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiLabel.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiMatrix.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiScrollView.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiSlider.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiTextInput.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiTextInputField.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\components\ofxDatGuiTimeGraph.h">
+      <Filter>addons\ofxDatGui\src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\core\ofxDatGuiComponent.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\core\ofxDatGuiConstants.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\core\ofxDatGuiEvents.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h">
+      <Filter>addons\ofxDatGui\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.h">
+      <Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes\ofxDatGuiTheme.h">
+      <Filter>addons\ofxDatGui\src\themes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h">
+      <Filter>addons\ofxDatGui\src\themes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>
