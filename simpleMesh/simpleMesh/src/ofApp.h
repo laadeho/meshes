@@ -20,5 +20,11 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+
+		ofMesh mesh, meshLines;
+		ofEasyCam cam;
+		vector<ofVec3f> offsets;
+
+		int nV = 100;
 		
 };

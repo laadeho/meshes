@@ -22,28 +22,28 @@
       <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons">
-      <UniqueIdentifier>{84977eb1-a89d-4b93-b83b-aa0e395e0f84}</UniqueIdentifier>
+      <UniqueIdentifier>{fa86288b-a9b0-41fa-8205-7280c85cf809}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxDatGui">
-      <UniqueIdentifier>{eb55836f-f7c0-4453-a34e-420988ff31f9}</UniqueIdentifier>
+      <UniqueIdentifier>{3c6c98d5-78ff-450b-b390-76d7ddc1ad62}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxDatGui\src">
-      <UniqueIdentifier>{2d40dae5-05d2-44a1-85c5-c605ca124934}</UniqueIdentifier>
+      <UniqueIdentifier>{6d4c7559-484d-4774-ad05-607f733dc18b}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxDatGui\src\components">
-      <UniqueIdentifier>{333dff2b-0707-4d7b-8649-4724bd893e47}</UniqueIdentifier>
+      <UniqueIdentifier>{c76404c5-cead-48ea-9f52-5c2159e7d840}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxDatGui\src\core">
-      <UniqueIdentifier>{1166789f-bd7a-4e4a-94a7-a85c1336a4da}</UniqueIdentifier>
+      <UniqueIdentifier>{cc7a068d-49ca-44d3-b537-42827a4a071d}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxDatGui\src\libs">
-      <UniqueIdentifier>{408424da-e4d1-4855-9637-293cb0654f92}</UniqueIdentifier>
+      <UniqueIdentifier>{d3a0f5f5-31ab-4a0a-8a43-1293ecefb1f9}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxDatGui\src\libs\ofxSmartFont">
-      <UniqueIdentifier>{196bc3e9-2339-458d-a997-86b62ac7a036}</UniqueIdentifier>
+      <UniqueIdentifier>{6cd0011b-1ec2-4c2b-9020-9fbf7cb40f2b}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxDatGui\src\themes">
-      <UniqueIdentifier>{0be06b81-8afb-4ad9-9168-1c19e9a9fdd4}</UniqueIdentifier>
+      <UniqueIdentifier>{78e47bb0-5b57-4022-8dd8-a07098d4264a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
