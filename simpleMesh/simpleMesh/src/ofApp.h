@@ -21,10 +21,10 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		ofMesh mesh, meshLines;
 		ofEasyCam cam;
-		vector<ofVec3f> offsets;
 
+		vector<ofVec3f> offsets;
+		ofMesh mesh, meshLines;
 		int nV = 100;
 		
 };

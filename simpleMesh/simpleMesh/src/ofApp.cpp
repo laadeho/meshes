@@ -7,10 +7,10 @@ void ofApp::setup(){
 	//mesh.setMode(OF_PRIMITIVE_LINE_STRIP);
 	//mesh.setMode(OF_PRIMITIVE_LINE_LOOP);
 	//mesh.setMode(OF_PRIMITIVE_TRIANGLES);
-	mesh.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
+	mesh.setMode(OF_PRIMITIVE_TRIANGLE_STRIP_ADJACENCY);
 	meshLines.setMode(OF_PRIMITIVE_LINE_STRIP);
 
-	cam.setPosition(ofGetWindowWidth() / 2, 50, 2500);
+	cam.setPosition(ofGetWindowWidth() / 2, 50, 500);
 
 	float rango = ofGetWindowHeight() / nV*.5;
 
@@ -20,12 +20,23 @@ void ofApp::setup(){
 			ofMap(i, 0, nV, 0, ofGetWindowWidth()) + ofRandom(-5, 5),
 			ofGetWindowHeight() / 2 + ofRandom(-5 * i + 1, 5 * i + 1),
 			0.0);*/
-		
-		ofVec3f vertice(
-			sin(ofMap(i, 0, nV, 0, 360))*ofGetWindowWidth()/2,
-			ofGetWindowHeight() / 2 + ofRandom(-rango * i + 1, rango * i + 1),
-			cos(ofMap(i, 0, nV, 0, 360))*ofGetWindowWidth()/2
-		);
+		ofVec3f vertice;
+		if (i % 2 == 0) {
+			ofVec3f vertice(
+				sin(ofMap(i, 0, nV, 0, 360))*ofGetWindowWidth() / 2,
+				ofGetWindowHeight() / 2 + ofRandom(-rango * i + 1, rango * i + 1),
+				//350,
+				cos(ofMap(i, 0, nV, 0, 360))*ofGetWindowWidth() / 2
+			);
+		}
+		else {
+			ofVec3f vertice(
+				sin(ofMap(i, 0, nV, 0, 360))*ofGetWindowWidth() / 2,
+				ofGetWindowHeight() / 2 + ofRandom(-rango * i + 1, rango * i + 1),
+				//-350,
+				cos(ofMap(i, 0, nV, 0, 360))*ofGetWindowWidth() / 2
+			);
+		}
 
 		mesh.addVertex(vertice);
 		meshLines.addVertex(vertice);
