@@ -1,7 +1,11 @@
 #include "ofApp.h"
 
+bool test;
+
 //--------------------------------------------------------------
 void ofApp::setup(){
+	ofSetFrameRate(60);
+
 	//mesh.setMode(OF_PRIMITIVE_POINTS);
 	//mesh.setMode(OF_PRIMITIVE_LINES);
 	//mesh.setMode(OF_PRIMITIVE_LINE_STRIP);
@@ -58,50 +62,45 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-	int numVerts = mesh.getNumVertices();
-	for (int i = 0; i < numVerts; ++i) {
-		ofVec3f vert = mesh.getVertex(i);
+	if(test){
+		int numVerts = mesh.getNumVertices();
+		for (int i = 0; i < numVerts; ++i) {
+			ofVec3f vert = mesh.getVertex(i);
 
-		float time = ofGetElapsedTimef();
-		float timeScale = 1;
-		float displacementScale =  1.05;
-		ofVec3f timeOffsets = offsets[i];
+			float time = ofGetElapsedTimef();
+			float timeScale = 1;
+			float displacementScale =  1.05;
+			ofVec3f timeOffsets = offsets[i];
 
-		// A typical design pattern for using Perlin noise uses a couple parameters:
-		// ofSignedNoise(time*timeScale+timeOffset)*displacementScale
-		//     ofSignedNoise(time) gives us noise values that change smoothly over
-		//         time
-		//     ofSignedNoise(time*timeScale) allows us to control the smoothness of
-		//         our noise (smaller timeScale, smoother values)
-		//     ofSignedNoise(time+timeOffset) allows us to use the same Perlin noise
-		//         function to control multiple things and have them look as if they
-		//         are moving independently
-		//     ofSignedNoise(time)*displacementScale allows us to change the bounds
-		//         of the noise from [-1, 1] to whatever we want
-		// Combine all of those parameters together, and you've got some nice
-		// control over your noise
-
-		vert.x += (ofSignedNoise(time*timeScale + timeOffsets.x)) * displacementScale;
-		vert.y += (ofSignedNoise(time*timeScale + timeOffsets.y)) * displacementScale;
-		vert.z += (ofSignedNoise(time*timeScale + timeOffsets.z)) * displacementScale;
-		mesh.setVertex(i, vert);
-		meshLines.setVertex(i, vert);
+			vert.x += (ofSignedNoise(time*timeScale + timeOffsets.x)) * displacementScale;
+			vert.y += (ofSignedNoise(time*timeScale + timeOffsets.y)) * displacementScale;
+			vert.z += (ofSignedNoise(time*timeScale + timeOffsets.z)) * displacementScale;
+			mesh.setVertex(i, vert);
+			meshLines.setVertex(i, vert);
+		}
 	}
 
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
+void ofApp::draw() {
 	ofBackground(0);
 	cam.begin();
 	cam.setDrag(0.1);
 
+	if (test)
+		drawTestMesh();
+
+	cam.end();
+
+}
+
+//--------------------------------------------------------------
+void ofApp::drawTestMesh() {
 	mesh.draw();
 	ofSetColor(0);
 	ofNoFill();
 	meshLines.draw();
-	cam.end();
-
 }
 
 //--------------------------------------------------------------
